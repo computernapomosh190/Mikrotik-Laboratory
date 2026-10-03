@@ -49,3 +49,9 @@ VPCS> ping 192.168.20.253
 84 bytes from 192.168.20.253 icmp_seq=4 ttl=62 time=6.452 ms
 ^C
 VPCS>
+VPCS> ping www.techspace.org
+www.techspace.org resolved to 192.168.40.10
+
+84 bytes from 192.168.40.10 icmp_seq=1 ttl=63 time=5.687 ms
+84 bytes from 192.168.40.10 icmp_seq=2 ttl=63 time=4.299 ms
+84 bytes from 192.168.40.10 icmp_seq=3 ttl=63 time=7.152 ms
