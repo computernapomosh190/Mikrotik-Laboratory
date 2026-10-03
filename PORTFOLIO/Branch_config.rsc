@@ -54,6 +54,9 @@ add action=accept chain=input comment="Allow SSH only IT" dst-address=\
     192.168.1.8 dst-port=22 protocol=tcp src-address=192.168.10.0/24
 add action=drop chain=forward comment="Drop Invalid packets" \
     connection-state=invalid protocol=tcp
+add action=reject chain=forward comment="Deny access to other networks" \
+    connection-state=new dst-address-list="Other Network" reject-with=\
+    icmp-network-unreachable src-address=192.168.20.0/24
 /ip firewall nat
 add action=masquerade chain=srcnat out-interface=ether1
 /ip route
