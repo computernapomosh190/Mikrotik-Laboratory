@@ -1,0 +1,59 @@
+VPCS> show ip
+
+NAME        : VPCS[1]
+IP/MASK     : 192.168.20.254/24
+GATEWAY     : 192.168.20.1
+DNS         : 8.8.8.8
+DHCP SERVER : 192.168.20.1
+DHCP LEASE  : 1737, 1800/900/1575
+MAC         : 00:50:79:66:68:57
+LPORT       : 20000
+RHOST:PORT  : 127.0.0.1:30000
+MTU         : 1500
+
+
+VPCS> ping 8.8.8.8
+
+84 bytes from 8.8.8.8 icmp_seq=1 ttl=116 time=28.715 ms
+84 bytes from 8.8.8.8 icmp_seq=2 ttl=116 time=31.293 ms
+84 bytes from 8.8.8.8 icmp_seq=3 ttl=116 time=28.273 ms
+^C
+VPCS> ping google.com
+google.com resolved to 142.251.98.113
+
+84 bytes from 142.251.98.113 icmp_seq=1 ttl=111 time=28.460 ms
+84 bytes from 142.251.98.113 icmp_seq=2 ttl=111 time=27.898 ms
+84 bytes from 142.251.98.113 icmp_seq=3 ttl=111 time=28.360 ms
+84 bytes from 142.251.98.113 icmp_seq=4 ttl=111 time=27.182 ms
+^C
+
+VPCS> ping 192.168.20.253
+
+84 bytes from 192.168.20.253 icmp_seq=1 ttl=64 time=1.270 ms
+84 bytes from 192.168.20.253 icmp_seq=2 ttl=64 time=1.777 ms
+84 bytes from 192.168.20.253 icmp_seq=3 ttl=64 time=1.435 ms
+84 bytes from 192.168.20.253 icmp_seq=4 ttl=64 time=1.273 ms
+^C
+
+VPCS> ping 192.168.10.100
+
+*192.168.20.1 icmp_seq=1 ttl=64 time=0.644 ms (ICMP type:3, code:0, Destination network unreachable)
+*192.168.20.1 icmp_seq=2 ttl=64 time=1.169 ms (ICMP type:3, code:0, Destination network unreachable)
+*192.168.20.1 icmp_seq=3 ttl=64 time=0.828 ms (ICMP type:3, code:0, Destination network unreachable)
+
+VPCS> ping 192.168.40.11
+
+*192.168.20.1 icmp_seq=1 ttl=64 time=0.817 ms (ICMP type:3, code:0, Destination network unreachable)
+*192.168.20.1 icmp_seq=2 ttl=64 time=0.551 ms (ICMP type:3, code:0, Destination network unreachable)
+*192.168.20.1 icmp_seq=3 ttl=64 time=1.120 ms (ICMP type:3, code:0, Destination network unreachable)
+*192.168.20.1 icmp_seq=4 ttl=64 time=1.044 ms (ICMP type:3, code:0, Destination network unreachable)
+
+VPCS> ping 192.168.30.199
+
+*192.168.20.1 icmp_seq=1 ttl=64 time=1.770 ms (ICMP type:3, code:0, Destination network unreachable)
+*192.168.20.1 icmp_seq=2 ttl=64 time=0.630 ms (ICMP type:3, code:0, Destination network unreachable)
+*192.168.20.1 icmp_seq=3 ttl=64 time=1.078 ms (ICMP type:3, code:0, Destination network unreachable)
+^C
+
+
+
