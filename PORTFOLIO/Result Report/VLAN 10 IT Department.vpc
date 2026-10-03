@@ -1,0 +1,51 @@
+
+VPCS> show ip
+
+NAME        : VPCS[1]
+IP/MASK     : 192.168.10.100/24
+GATEWAY     : 192.168.10.1
+DNS         : 8.8.8.8  192.168.10.1
+DHCP SERVER : 192.168.10.1
+DHCP LEASE  : 1742, 1800/900/1575
+MAC         : 00:50:79:66:68:61
+LPORT       : 20000
+RHOST:PORT  : 127.0.0.1:30000
+MTU         : 1500
+
+VPCS> ping 8.8.8.8
+
+84 bytes from 8.8.8.8 icmp_seq=1 ttl=115 time=110.929 ms
+84 bytes from 8.8.8.8 icmp_seq=2 ttl=115 time=31.385 ms
+84 bytes from 8.8.8.8 icmp_seq=3 ttl=115 time=30.932 ms
+^C
+VPCS> ping google.com
+google.com resolved to 142.251.98.113
+
+84 bytes from 142.251.98.113 icmp_seq=1 ttl=110 time=29.217 ms
+84 bytes from 142.251.98.113 icmp_seq=2 ttl=110 time=33.390 ms
+84 bytes from 142.251.98.113 icmp_seq=3 ttl=110 time=29.437 ms
+84 bytes from 142.251.98.113 icmp_seq=4 ttl=110 time=29.742 ms
+^C
+VPCS> ping ftp.techspace.lab
+ftp.techspace.lab resolved to 192.168.40.200
+
+84 bytes from 192.168.40.200 icmp_seq=1 ttl=63 time=6.480 ms
+84 bytes from 192.168.40.200 icmp_seq=2 ttl=63 time=4.626 ms
+84 bytes from 192.168.40.200 icmp_seq=3 ttl=63 time=3.945 ms
+84 bytes from 192.168.40.200 icmp_seq=4 ttl=63 time=4.563 ms
+^C
+VPCS> ping 192.168.30.199
+
+84 bytes from 192.168.30.199 icmp_seq=1 ttl=63 time=14.249 ms
+84 bytes from 192.168.30.199 icmp_seq=2 ttl=63 time=4.484 ms
+84 bytes from 192.168.30.199 icmp_seq=3 ttl=63 time=5.160 ms
+84 bytes from 192.168.30.199 icmp_seq=4 ttl=63 time=3.709 ms
+^C
+VPCS> ping 192.168.20.253
+
+84 bytes from 192.168.20.253 icmp_seq=1 ttl=62 time=8.442 ms
+84 bytes from 192.168.20.253 icmp_seq=2 ttl=62 time=9.658 ms
+84 bytes from 192.168.20.253 icmp_seq=3 ttl=62 time=6.508 ms
+84 bytes from 192.168.20.253 icmp_seq=4 ttl=62 time=6.452 ms
+^C
+VPCS>
