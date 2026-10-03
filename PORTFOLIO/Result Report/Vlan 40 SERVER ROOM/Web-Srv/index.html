@@ -1,0 +1,161 @@
+cat << 'EOF' > /www/index.html
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechSpace — Новітні Технологічні Рішення</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: #0b0f19;
+            color: #f3f4f6;
+            line-height: 1.6;
+        }
+        header {
+            background: linear-gradient(135deg, #1e293b, #0f172a);
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #38bdf8;
+        }
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            color: #38bdf8;
+            letter-spacing: 1px;
+        }
+        .logo span {
+            color: #ffffff;
+        }
+        .nav-links {
+            list-style: none;
+            display: flex;
+        }
+        .nav-links li {
+            margin-left: 20px;
+        }
+        .nav-links a {
+            color: #9ca3af;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .nav-links a:hover {
+            color: #38bdf8;
+        }
+        .hero {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 100px 20px;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            color: #ffffff;
+        }
+        .hero p {
+            font-size: 20px;
+            color: #9ca3af;
+            max-width: 700px;
+            margin: 0 auto 40px auto;
+        }
+        .btn {
+            background-color: #38bdf8;
+            color: #0b0f19;
+            padding: 12px 30px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        .btn:hover {
+            background-color: #0ea5e9;
+        }
+        .services {
+            background-color: #111827;
+            padding: 80px 20px;
+        }
+        .services-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        .card {
+            background-color: #1f2937;
+            padding: 30px;
+            border-radius: 8px;
+            border: 1px solid #374151;
+            transition: transform 0.3s, border-color 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: #38bdf8;
+        }
+        .card h3 {
+            margin-bottom: 15px;
+            color: #38bdf8;
+        }
+        .card p {
+            color: #9ca3af;
+        }
+        footer {
+            background-color: #0f172a;
+            text-align: center;
+            padding: 30px;
+            color: #6b7280;
+            font-size: 14px;
+            border-top: 1px solid #1e293b;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">Tech<span>Space</span></div>
+        <ul class="nav-links">
+            <li><a href="#">Головна</a></li>
+            <li><a href="#">Послуги</a></li>
+            <li><a href="#">Про нас</a></li>
+            <li><a href="#">Контакти</a></li>
+        </ul>
+    </header>
+
+    <section class="hero">
+        <h1>Створюємо цифрове майбутнє разом</h1>
+        <p>TechSpace — провідний розробник інноваційних рішень для бізнесу, хмарних технологій та кібербезпеки. Ми масштабуємо ваш потенціал.</p>
+        <a href="#" class="btn">Дізнатись більше</a>
+    </section>
+
+    <section class="services">
+        <div class="services-container">
+            <div class="card">
+                <h3>Cloud Infrastructure</h3>
+                <p>Проектування, оптимізація та розгортання високонадійних хмарних серверів і мереж для будь-яких завдань.</p>
+            </div>
+            <div class="card">
+                <h3>Cyber Security</h3>
+                <p>Комплексний захист корпоративних даних, аудит безпеки, налаштування Firewall та ізоляція критичних VLAN.</p>
+            </div>
+            <div class="card">
+                <h3>IT Consulting</h3>
+                <p>Аналіз вашої поточної інфраструктури та впровадження найкращих практик автоматизації та адміністрування.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 TechSpace. Всі права захищені. Сервер розгорнуто на OpenWrt в лабораторії PNET-Lab.</p>
+    </footer>
+
+</body>
+</html>
+EOF
